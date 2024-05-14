@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terzo</title>
+
+    <style>
+        body {
+            background-image: url("https://getwallpapers.com/wallpaper/full/9/7/0/1300534-turquoise-and-black-wallpaper-1080x1920-for-samsung-galaxy.jpg");
+            background-size: cover; 
+            background-repeat: no-repeat;
+            
+            text-color:#FFFFFF;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 0px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 0px solid #ccc;
+            border-radius: 3px;
+            color:#000000;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color:#FFFFFF;
+        }
+
+        p {
+            font-family: 'Arimo', sans-serif;
+            color: #FFFFFF;
+        }
+
+    </style>
+
+    <script>
+        function handleLoginButtonClick() {
+            window.location.href = 'file:///F:/Dise%C3%B1o%20Interactivo/Avance%202%20Evidencia%20Dise%C3%B1o%20Interactivo/Inicio.html';
+        }
+
+io
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                console.error("Geolocalización no es compatible con este navegador.");
+            }
+        }
+
+
+        function showPosition(position) {
+            console.log("Latitud: " + position.coords.latitude);
+            console.log("Longitud: " + position.coords.longitude);
+        }
+        
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Terzo</h1>
+        <form action="login.php" method="post">
+            <input type="text" placeholder="Correo electrónico" name="email" required>
+            <input type="password" placeholder="Contraseña" name="password" required>
+            <button type="submit" onclick="window.location.href = 'file:///F:/Dise%C3%B1o%20Interactivo/Avance%202%20Evidencia%20Dise%C3%B1o%20Interactivo/Inicio.html';">Ingresar</button>
+        </form>
+        <p>O inicia sesión con:</p>
+        <button>Google</button>
+        <p>¿No tienes cuenta? <a href="file:///F:/Dise%C3%B1o%20Interactivo/Avance%202%20Evidencia%20Dise%C3%B1o%20Interactivo/Crear%20cuenta.html">Crear cuenta</a></p>
+    </div>
+</body>
+</html>

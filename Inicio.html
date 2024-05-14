@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            color:#FFFFFF;
+            background-color: #000000;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 0px solid #ccc;
+            border-radius: 5px;
+            background: #019EA0;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .user-profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .post {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 4px solid #000;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        .post-description {
+            margin-top: 10px;
+        }
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .post-actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+
+        p {
+            font-family: 'Arimo', sans-serif;
+            color: #000000;
+            text-align: left;
+        }
+
+         .post-actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease; /* Agregamos una transición suave */
+        }
+
+        .post-actions button:hover {
+            transform: scale(1.1); /* Escalamos el botón al pasar el cursor sobre él */
+        }
+
+        .post-actions img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Terzo</h1>
+        <img class="profile-image" src="https://i.pinimg.com/564x/0d/54/b1/0d54b1b1a3df27c1560fc9c717216823.jpg" alt="Foto de perfil">
+    </header>
+
+    <div class="container">
+        <div class="user-profile">
+            <img src="https://pbs.twimg.com/profile_images/1771210706895110144/LEw5IU-a_400x400.jpg" alt="Foto de perfil">
+            <p>𝙱 𝙼 𝙹 🍉</p>
+            <p>@BMJ_arts</p>
+        </div>
+
+    <div class="post">
+        <img src="https://i.pinimg.com/564x/8d/7c/bc/8d7cbc962e2ef69f9f8f393e6eb3dd14.jpg" alt="Imagen de la publicación">
+        <p class="post-description">did another redraw 🏃🏽#MiguelOHara #Spiderman2099</p>
+        <div class="post-actions">
+            <button onclick="handleButtonClick('like')"><img src="Corazon.png"></button>
+            <button onclick="handleButtonClick('comment')"><img src="Comentar.png"></button>
+            <button onclick="handleButtonClick('share')"><img src=" Compartir.png"></button>
+            <button onclick="handleButtonClick('save')"><img src="Guardar.png"></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="user-profile">
+            <img src="https://pbs.twimg.com/profile_images/1783629484429598720/7QISDKrB_400x400.jpg" alt="Foto de perfil">
+            <p>Uzuri Art</p>
+            <p>@uzuriartonline</p>
+        </div>
+
+    <div class="post">
+        <img src="https://pbs.twimg.com/media/GLnlVnbWIAAy35E?format=jpg&name=medium" alt="Imagen de la publicación">
+        <p class="post-description">My latest Topps card is available in 
+@ToppsSWCT
+, featuring Anakin Skywalker and the binary sunset.</p>
+        <div class="post-actions">
+            <button onclick="handleButtonClick('like')"><img src="Corazon.png"></button>
+            <button onclick="handleButtonClick('comment')"><img src="Comentar.png"></button>
+            <button onclick="handleButtonClick('share')"><img src=" Compartir.png"></button>
+            <button onclick="handleButtonClick('save')"><img src="Guardar.png"></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="user-profile">
+            <img src="https://pbs.twimg.com/profile_images/1628335578960875522/a1Tq-BAR_400x400.jpg" alt="Foto de perfil">
+            <p>tasia</p>
+            <p>@_tasiams</p>
+        </div>
+
+    <div class="post">
+        <img src="https://pbs.twimg.com/media/GLEaBe2XQAASbYR?format=jpg&name=large" alt="Imagen de la publicación">
+        <p class="post-description">ariel in her glittering dress (live action version)</p>
+        <div class="post-actions">
+            <button onclick="handleButtonClick('like')"><img src="Corazon.png"></button>
+            <button onclick="handleButtonClick('comment')"><img src="Comentar.png"></button>
+            <button onclick="handleButtonClick('share')"><img src=" Compartir.png"></button>
+            <button onclick="handleButtonClick('save')"><img src="Guardar.png"></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="user-profile">
+            <img src="https://pbs.twimg.com/profile_images/1790469147303849984/GssvwOxK_400x400.jpg" alt="Foto de perfil">
+            <p>𝙁𝙡𝙤𝙥𝙨</p>
+            <p>@flopscomics</p>
+        </div>
+
+    <div class="post">
+        <img src="https://pbs.twimg.com/media/GLpVlRDXoAAyVA-?format=jpg&name=medium" alt="Imagen de la publicación">
+        <p class="post-description">🚨 I'll be available for annual Corner Box requests again in May! £100, character of your choice, sent as a print-ready file (A4 size works best).
+I'll only have a handful of slots, so my DMs are open!</p>
+        <div class="post-actions">
+            <button onclick="handleButtonClick('like')"><img src="Corazon.png"></button>
+            <button onclick="handleButtonClick('comment')"><img src="Comentar.png"></button>
+            <button onclick="handleButtonClick('share')"><img src=" Compartir.png"></button>
+            <button onclick="handleButtonClick('save')"><img src="Guardar.png"></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="user-profile">
+            <img src="https://pbs.twimg.com/profile_images/1714511818956345344/Yk7PH3qB_400x400.jpg" alt="Foto de perfil">
+            <p>boobstergolddd | FREE PALESTINE</p>
+            <p>@honeydewtime</p>
+        </div>
+
+    <div class="post">
+        <img src="https://pbs.twimg.com/media/GM3Md1UbQAE-i3M?format=jpg&name=large" alt="Imagen de la publicación">
+        <p class="post-description">Icon comms</p>
+        <div class="post-actions">
+            <button onclick="handleButtonClick('like')"><img src="Corazon.png"></button>
+            <button onclick="handleButtonClick('comment')"><img src="Comentar.png"></button>
+            <button onclick="handleButtonClick('share')"><img src=" Compartir.png"></button>
+            <button onclick="handleButtonClick('save')"><img src="Guardar.png"></button>
+        </div>
+    </div>
+</body>
+</html>
